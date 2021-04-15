@@ -113,8 +113,8 @@ padding: 5px 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 150px;
-    margin: 5px 10px;
+    width: 140px;
+    margin: 10px 5px;
 }
 
 .outter-head {
@@ -144,6 +144,19 @@ padding: 5px 10px;
     width: 100%;
     margin: 10px 0;
     height: 300px;
+    background: white;
+    box-shadow: 0px 0px 6px black;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0;
+    padding: 5px;
+    height: 100px;
     background: white;
     box-shadow: 0px 0px 6px black;
 }
@@ -181,17 +194,29 @@ padding: 5px 10px;
 }
 #trend-title {
     font-size: 8px;
-    width: 90%;
+    width: 85%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  
 }
 #trend-rate {
     width: 10%;
 }
-/* .main-view {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: flex-end;
-} */
+
+.title {
+    font-size: 10px;
+    width: 85%;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+
+}
+.rate {
+    font-size: 12px;
+    width: 10%;
+}
+
 .upper {
     width: 100%;
     display: flex;
@@ -211,35 +236,8 @@ padding: 5px 10px;
     box-shadow: 1px 1px 5px gray;
     margin: 5px 15px;
 }
-/* .cancel {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding: 5px;
-    color: red;
-  cursor: pointer;
-} */
-/* #cancel-view {
-    color: red;
-    padding: 2px 2px 10px 2px;
-    cursor: pointer;
-} */
-/* .display-text {
-    width: 98%;
-    background: white;
-    font-size: 14px;
-    position: absolute;
-    top: 120px;
-    z-index: 10;
-    height: 100px;
-    margin: 5px 1%;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px black;
-    display: none;
-} */
-/* .display-text p {
-    font-size: 13px;
-} */
+
+
 .img {
     width: 100%;
     height: 180px;
@@ -252,6 +250,7 @@ padding: 5px 10px;
     justify-content: space-between;
     padding: 5px;
     color: white;
+    height: 20px;
 }
 .head h5 {
     color: red;
@@ -272,7 +271,9 @@ padding: 5px 10px;
      width: 200px;
      margin: 10px 15px;
  }
-
+.footer {
+    height: 70px;
+}
  
  .img {
      height: 240px;
